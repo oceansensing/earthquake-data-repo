@@ -1,0 +1,29 @@
+# What this repository publishes: the world's earthquakes as the U.S. Geological Survey reports them —
+# its Earthquake Hazards Program's real-time feeds merged into one file, `quakes.json`: magnitude 4.5
+# and above worldwide for the past 30 days, 2.5 and above for the past 7 (mostly the United States'
+# networks), and every event the USGS marks significant for the past 30. The fetcher is the site's
+# `scripts/fetch-earthquakes.py` and the contract its `scripts/check-earthquakes.py`: no file the
+# website's map reads, so `test-schema.mjs` does not describe it.
+#
+# **Every ten minutes**: the USGS makes its feeds again each minute and holds them 60 s; asking more
+# often gains nothing and too often is refused (429). The budget is two hours, a schedule's lateness
+# beside the feed's own.
+
+[contract]
+check = ["python3", "scripts/check-earthquakes.py"]
+roots = ["python3", "scripts/check-earthquakes.py", "--roots"]
+
+[defaults]
+timeout_minutes = 20
+
+[steps.quakes]
+cmd = ["python3", "scripts/fetch-earthquakes.py", "--only=quakes"]
+lane = "earthquake.usgs.gov"
+
+[products.quakes]
+title = "The world's earthquakes: M4.5+ for 30 days, M2.5+ for 7, the significant for 30 (USGS real-time feeds)"
+step = "quakes"
+roots = ["quakes.json"]
+writes = ["quakes.json"]
+namespace = ["python3", "scripts/fetch-earthquakes.py", "--namespace", "--only=quakes"]
+max_age_hours = 2
