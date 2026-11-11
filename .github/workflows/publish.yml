@@ -20,8 +20,9 @@ on:
         description: 'Rebuild even if the probe says the tree is current'
         type: boolean
         default: false
-  # schedule:
-  #   - cron: '*/10 * * * *'
+  # Every ten minutes since 2026-11-11, the first dispatched run read (43082769436: 879 earthquakes, fresh).
+  schedule:
+    - cron: '*/10 * * * *'
 
 permissions: {}
 

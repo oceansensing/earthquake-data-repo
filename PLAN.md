@@ -1,7 +1,8 @@
 # earthquake-data-repo: the founding plan and running record
 
 The world's **earthquakes**, from the U.S. Geological Survey. Created on GitHub by the owner and given its documents by the site's
-`pipeline/scaffold/new-origin.py`. **Nothing is published yet.**
+`pipeline/scaffold/new-origin.py`. **Publishing since 2026-11-11** (the first dispatched run, `43082769436`, 18:59 UTC:
+879 earthquakes as of 18:58:57 UTC, `quakes` fresh, five files to R2), **every ten minutes** since.
 
 ## What it is for
 
@@ -13,6 +14,7 @@ The U.S. Geological Survey's real-time GeoJSON summary feeds (`earthquake.usgs.g
 
 ## Open
 
-1. The first dispatched run, read: `quakes.json` on R2, its count and its newest event as the USGS's own map shows.
-2. Then the ten-minute schedule, and a day of its runs read: none refused, the budget held.
+1. ~~The first dispatched run, read~~ — 2026-11-11, run `43082769436`: 879 earthquakes, fresh, five files to R2; its
+   status served to every pass, `quakes.json` to the passes its class admits.
+2. The ten-minute schedule, on since 2026-11-11: a day of its runs read — none refused, the budget held.
 3. NOAA's tsunami warning centers' latest bulletins (tsunami.gov), beside the earthquakes.
