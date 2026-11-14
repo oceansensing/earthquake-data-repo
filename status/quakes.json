@@ -1,0 +1,21 @@
+{
+ "schema": 1,
+ "product": "quakes",
+ "title": "The world's earthquakes: M4.5+ for 30 days, M2.5+ for 7, the significant for 30 (USGS real-time feeds)",
+ "fate": "fresh",
+ "reason": null,
+ "checked": "2026-11-14T22:17:08Z",
+ "updated": "2026-11-14T22:17:08Z",
+ "hour": "2026-11-14T22:16:14Z",
+ "modelRun": null,
+ "source": "U.S. Geological Survey",
+ "hours": [
+  "2026-11-14T22:16:14Z"
+ ],
+ "files": {
+  "quakes.json": {
+   "bytes": 187901,
+   "sha256": "a71e127d6314e262faa4a39a571adb896663f03e9e8f024c3f1ceb14cc090fec"
+  }
+ }
+}
