@@ -1,0 +1,37 @@
+{
+ "schema": 2,
+ "generated": "2026-11-21T13:25:20Z",
+ "mode": "full",
+ "run": {
+  "id": "44908729888",
+  "url": "https://github.com/oceansensing/earthquake-data-repo/actions/runs/44908729888"
+ },
+ "schedule": {
+  "crons": [
+   "*/10 * * * *"
+  ],
+  "longestGapHours": 0.17
+ },
+ "products": {
+  "quakes": {
+   "title": "The world's earthquakes: M4.5+ for 30 days, M2.5+ for 7, the significant for 30 (USGS real-time feeds)",
+   "roots": [
+    "quakes.json"
+   ],
+   "fate": "fresh",
+   "reason": null,
+   "checked": "2026-11-21T13:25:20Z",
+   "updated": "2026-11-21T13:25:20Z",
+   "hour": "2026-11-21T13:24:47Z",
+   "modelRun": null,
+   "source": "U.S. Geological Survey",
+   "hours": [
+    "2026-11-21T13:24:47Z"
+   ],
+   "stale": false,
+   "staleCause": null,
+   "ageHours": 0.01,
+   "nearestOffsetHours": 0.01
+  }
+ }
+}
