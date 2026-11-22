@@ -3,7 +3,7 @@
 The world's **earthquakes**, from the U.S. Geological Survey: a data repository of the oceansensing ocean map system, with its own
 schedule and its own place on Cloudflare R2, and no code of its own.
 
-**Nothing is published yet.** `PLAN.md` is the founding plan; `CLAUDE.md` carries what must not be
+**Publishing since 2026-11-11, every ten minutes.** `PLAN.md` is the founding plan; `CLAUDE.md` carries what must not be
 got wrong and the shared doc doctrine.
 
 ## What it publishes
@@ -25,9 +25,9 @@ run time. This repository carries `pipeline/products.toml` and its publish
 workflow, and nothing else executable. Each run publishes to Cloudflare R2 alone
 (the site pipeline's D13). Related repositories: none it depends on.
 
-**Which document gets what, and what "update docs" means across all
-thirty-four repositories, is the doctrine block at the top of `CLAUDE.md`**: the
-same text in all thirty-four, held equal by the site's `check:docs`.
+**Which document gets what, and what "update docs" means across every
+repository of this project, is the doctrine block at the top of `CLAUDE.md`**: the
+same text in each, held equal by the site's `check:docs`.
 
 ## Structure
 
